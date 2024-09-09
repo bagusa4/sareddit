@@ -9,7 +9,7 @@ pids
 *.pid.lock
 
 # dotenv environment variables file
-.env
+*.env
 
 # Venv
 .venv
