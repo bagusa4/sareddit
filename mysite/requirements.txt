@@ -1,0 +1,11 @@
+# Dev environment
+pip
+
+# App
+streamlit==1.38.0
+nltk
+praw
+textblob
+pandas
+numpy
+python-dotenv
