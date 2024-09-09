@@ -43,7 +43,8 @@ reddit = praw.Reddit(
 )
 
 # Set Title
-st.title("Sentiment Analysis - Reddit")
+st.title("SAReddit")
+st.header("Sentiment Analysis - Reddit", divider=True)
 
 st.subheader("Reddit Authentication", divider=True)
 # Initialize PRAW Reddit Authentication

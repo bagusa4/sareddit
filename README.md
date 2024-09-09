@@ -1,6 +1,6 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
-
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+# About
+## SAReddit
+This is a simple project that do Sentiment Analysis on Reddit website.
 
 # References
 - [Using APIs in Python for Data Collection — Scraping Reddit (Part 2)](https://medium.com/the-academics-field-guide-to-coding/python-data-collection-on-reddit-part-2-of-using-apis-in-python-for-data-collection-8b54a5584cf9)
@@ -19,3 +19,7 @@ Learn more at https://developers.google.com/idx/guides/customize-idx-env
 
 # IDE
 - [Google Project IDX](https://idx.google.com/)
+
+Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+
+Learn more at https://developers.google.com/idx/guides/customize-idx-env
