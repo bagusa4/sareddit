@@ -2,6 +2,9 @@
 ## SAReddit
 This is a simple project that do Sentiment Analysis on Reddit website.
 
+## Demo Hosted on Streamlit
+[Streamlit SAReddit](https://sareddit.streamlit.app/)
+
 # References
 - [Using APIs in Python for Data Collection — Scraping Reddit (Part 2)](https://medium.com/the-academics-field-guide-to-coding/python-data-collection-on-reddit-part-2-of-using-apis-in-python-for-data-collection-8b54a5584cf9)
 - [Vader: A Comprehensive Guide to Sentiment Analysis in Python](https://medium.com/@rslavanyageetha/vader-a-comprehensive-guide-to-sentiment-analysis-in-python-c4f1868b0d2e)
