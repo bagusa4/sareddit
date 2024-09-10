@@ -120,6 +120,11 @@ if subreddit:
     sentiment_percentages = (sentiment_counts / sentiment_counts.sum() * 100).to_frame().T
     
     st.header("Data Chart", divider=True)
+    st.write('''
+        The compound value is basically the normal of the 3 values negative, positive and neutral.
+        So if the compound value leans towards negative then the overall sentiment is negative,
+        if the compound value leans towards positive then the overall sentiment is positive.
+    ''')
     st.caption(":orange[Compound], :red[Negative], :blue[Neutral], :green[Positive]")
     st.bar_chart(
         data=sentiment_percentages,

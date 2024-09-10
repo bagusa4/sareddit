@@ -8,6 +8,7 @@ This is a simple project that do Sentiment Analysis on Reddit website.
 - [NLTK Sentiment Analysis Tutorial for Beginners](https://www.datacamp.com/tutorial/text-analytics-beginners-nltk)
 - [Reddit Sentiment Analysis](https://medium.com/@kiddojazz/reddit-sentiment-analysis-f8a1a790124a)
 - [RedditSentimentAnalyzer](https://github.com/jalvin99/RedditSentimentAnalyzer)
+- [Sentiment Analysis Using Python and NLTK](https://medium.com/swlh/sentiment-analysis-using-python-and-nltk-library-d68caba27e1d)
 
 # Library Usage
 - [Streamlit](https://streamlit.io/)
