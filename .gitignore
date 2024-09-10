@@ -10,6 +10,7 @@ pids
 
 # dotenv environment variables file
 *.env
+*.toml
 
 # Venv
 .venv

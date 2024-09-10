@@ -11,6 +11,11 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 #load environment variables
 load_dotenv(find_dotenv("prawconfig.env"))
 
+# REDDIT CREDENTIALS
+REDDIT_CLIENT_ID = st.secrets["REDDIT"]["CLIENT_ID"] if st.secrets["REDDIT"]["CLIENT_ID"] else os.getenv("REDDIT_CLIENT_ID")
+REDDIT_USER_AGENT = st.secrets["REDDIT"]["USER_AGENT"] if st.secrets["REDDIT"]["USER_AGENT"] else os.getenv("REDDIT_USER_AGENT")
+REDDIT_REDIRECT_URI = st.secrets["REDDIT"]["REDIRECT_URI"] if st.secrets["REDDIT"]["REDIRECT_URI"] else os.getenv("REDDIT_REDIRECT_URI")
+
 # Initialize NLTK
 nltk.download('all')
 analyzer = SentimentIntensityAnalyzer()
@@ -36,10 +41,10 @@ def analyze_sentiment(text):
 
 # Initialize PRAW
 reddit = praw.Reddit(
-    client_id=os.getenv("REDDIT_CLIENT_ID"),
+    client_id=REDDIT_CLIENT_ID,
     client_secret=None,
-    user_agent=os.getenv("REDDIT_USER_AGENT"),
-    redirect_uri=os.getenv("REDDIT_REDIRECT_URI"),
+    user_agent=REDDIT_USER_AGENT,
+    redirect_uri=REDDIT_REDIRECT_URI,
 )
 
 # Set Title
@@ -64,9 +69,9 @@ if 'code' in st.query_params:
 # If authenticated, create a Reddit instance with the refresh token
 if 'refresh_token' in st.session_state:
     reddit = praw.Reddit(
-        client_id=os.getenv("REDDIT_CLIENT_ID"),
+        client_id=REDDIT_CLIENT_ID,
         client_secret=None,
-        user_agent=os.getenv("REDDIT_USER_AGENT"),
+        user_agent=REDDIT_USER_AGENT,
         refresh_token=st.session_state['refresh_token']
     )
     st.write("Authenticated Reddit instance ready!")
